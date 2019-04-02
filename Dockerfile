@@ -4,6 +4,7 @@ RUN apt-get update && apt-get -y install python3-dev python-pip libatlas-base-de
 
 RUN pip install numpy
 RUN pip install scipy
+RUN apt-get -y install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev tcl8.6-dev tk8.6-dev python-tk
 RUN pip install pillow
 RUN pip install matplotlib
 RUN pip install keras
