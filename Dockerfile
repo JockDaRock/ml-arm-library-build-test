@@ -1,6 +1,6 @@
 FROM arm64v8/ubuntu
 
-RUN apt-get update && apt-get -y install python3-dev python-pip libatlas-base-dev gfortran gcc libopenblas-base libopenblas-dev gcc cython
+RUN apt-get update && apt-get -y install python3-dev python3-pip libatlas-base-dev gfortran gcc libopenblas-base libopenblas-dev gcc cython libhdf5-dev
 
 RUN pip install numpy
 RUN pip install scipy
